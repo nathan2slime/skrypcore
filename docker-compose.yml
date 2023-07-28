@@ -1,0 +1,10 @@
+services:
+  app:
+    image: core.spacekrypton
+    container_name: core.spacekrypton
+    build: .
+    command: yarn start
+    expose:
+      - 4767:3000
+    ports:
+      - 4767:3000
