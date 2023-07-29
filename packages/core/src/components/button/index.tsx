@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 
 import { KryButtonProps } from './model';
 import { styles } from './styles';
+import { bindClass } from '../../utils/class';
 
 export const KryButton = ({
   className,
@@ -14,7 +15,11 @@ export const KryButton = ({
 }: KryButtonProps) => (
   <motion.button
     {...props}
-    className={styles({ className, variant, color, disabled, rounded })}
+    data-testid="button"
+    className={bindClass(
+      { className, rounded, disabled, variant, color },
+      styles,
+    )}
   >
     {children}
   </motion.button>

@@ -48,5 +48,5 @@ export const styles = tv({
       disabled: true,
       class: 'dark:bg-transparent',
     },
-  ] as object[],
+  ],
 });
