@@ -5,9 +5,9 @@ export const styles = tv({
   variants: {
     color: {
       primary:
-        'bg-primary-500 hover:bg-primary-500 text-light-400 dark:text-dark-400',
+        'bg-primary-500 hover:bg-primary-500 text-dark-400',
       secondary:
-        'bg-secondary-600 hover:bg-secondary-110 text-dark-200 dark:text-dark-200',
+        'bg-secondary-600 hover:bg-secondary-110 text-dark-200',
     },
     variant: {
       solid: 'border-transparent',
@@ -19,7 +19,7 @@ export const styles = tv({
       false: 'w-fit',
     },
     disabled: {
-      true: 'pointer-events-none bg-gray-400 text-gray-700 dark:text-gray-400 dark:bg-dark-700',
+      true: 'pointer-events-none text-gray-400 bg-dark-700',
       false: '',
     },
     rounded: {
@@ -34,7 +34,7 @@ export const styles = tv({
     {
       color: 'primary',
       variant: 'outline',
-      class: 'text-primary-100 dark:text-primary-100 hover:text-primary-200',
+      class: 'text-primary-100 hover:text-primary-200',
     },
     {
       color: 'secondary',
@@ -48,5 +48,5 @@ export const styles = tv({
       disabled: true,
       class: 'dark:bg-transparent',
     },
-  ] as object[],
+  ],
 });
